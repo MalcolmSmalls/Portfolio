@@ -1,55 +1,9 @@
 import React from 'react'
 import { bg1 } from '../assets/'
 import useState from 'react'
+import Typewriter from 'typewriter-effect'
 
 export default function Header() {
-  const [loopNum, setLoopNum] = React.useState(0)
-  const [isDeleting, setIsDeleting] = React.useState(false)
-  const [text, setText] = React.useState('')
-  const [delta, setDelta] = React.useState(300 - Math.random() * 100)
-  const [index, setIndex] = React.useState(1)
-  const toRotate = [
-    'Full Stack Software Engineer',
-    'Web Developer',
-    'Music Producer',
-  ]
-  const period = 2000
-
-  React.useEffect(() => {
-    let ticker = setInterval(() => {
-      tick()
-    }, delta)
-    return () => {
-      clearInterval(ticker)
-    }
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length
-    let fullText = toRotate[i]
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1)
-
-    setText(updatedText)
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2)
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true)
-      setIndex((prevIndex) => prevIndex - 1)
-      setDelta(period)
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false)
-      setLoopNum(loopNum + 1)
-      setIndex(1)
-      setDelta(500)
-    } else {
-      setIndex((prevIndex) => prevIndex + 1)
-    }
-  }
   return (
     <>
       <div
@@ -60,7 +14,22 @@ export default function Header() {
           <h1 className='text-white lg:text-9xl text-7xl sm:text-7xl font-BebasNeue'>
             Malcolm Smalls
           </h1>
-          <h3 className='text-white font-BebasNeue text-5xl border'>{text}</h3>
+          <h3 className='text-white font-BebasNeue text-5xl'>
+            <Typewriter
+              options={{
+                strings: [
+                  'Full Stack Software Engineer',
+                  'JavaScript Web Developer',
+                  'HTML/CSS, Node.JS, React, MongooseDB',
+                ],
+                autoStart: true,
+                delay: 90,
+                deleteSpeed: 60,
+                pauseFor: 1700,
+                loop: true,
+              }}
+            />
+          </h3>
         </div>
       </div>
     </>
