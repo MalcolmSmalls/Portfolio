@@ -1,0 +1,63 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+export default function Skillset() {
+  return (
+    <div className='h-full bg-[#292929]'>
+      <h2 className='text-white font-BebasNeue text-5xl text-center underline underline-offset-8 decoration-red-500 decoration-double py-20'>
+        Skillset
+      </h2>
+      <div className='container font-Raleway flex p-5 mx-auto w-2/3 gap-10  '>
+        <div className='container flex flex-col'>
+          <i className='fab fa-html5 text-red-500 text-3xl'></i>
+          <h3 className='text-white font-bold text-2xl pb-2'>HTML/CSS</h3>
+          <p className='text-[#747474] font-semibold pb-5'>
+            Learning from The Odin Project and #100Devs, I'm able to build
+            websites from scratch using semantically correct HTML tags with
+            mobile-first, responsive CSS.
+          </p>
+          <i className='fab fa-square-js text-red-500 text-3xl'></i>
+          <h3 className='text-white font-bold text-2xl pb-2'>JavaScript</h3>
+          <p className='text-[#747474] font-semibold pb-5'>
+            After completing multiple JavaScript projects, including building
+            'Battleship' and 'Tic-Tac-Toe', I've learned a lot of vanilla JS to
+            manipulate the DOM in order to provide an interactive experience for
+            users.
+          </p>
+          <i className='fab fa-react text-red-500 text-3xl'></i>
+          <h3 className='text-white font-bold text-2xl pb-2'>React.JS</h3>
+          <p className='text-[#747474] font-semibold pb-5'>
+            Adding even more complex interactivity, React.JS complements my
+            vanilla JS knowledge. After doing various projects from Scrimba and
+            the Odin Project, I am able to build games and web apps that
+            interact with APIs.
+          </p>
+        </div>
+
+        <div className='container flex flex-col'>
+          <i className='fas fa-file-code text-red-500 text-3xl'></i>
+          <h3 className='text-white font-bold text-2xl pb-2'>Tailwind CSS</h3>
+          <p className='text-[#747474] font-semibold pb-5'>
+            New to the toolbelt, Tailwind has helped me design faster and more
+            efficiently. While not a 100% replacement to CSS, Tailwind allows me
+            to focus more on the logic and functionality while still producing a
+            beautiful, responsive web application.
+          </p>
+          <i className='fab fa-node-js text-red-500 text-3xl'></i>
+          <h3 className='text-white font-bold text-2xl pb-2'>Node.JS</h3>
+          <p className='text-[#747474] font-semibold pb-5'>
+            Leveraging both Node.JS and Express.JS, I am able to build RESTful
+            APIs in order to create full stack web applications.
+          </p>
+          <i className='fas fa-database text-red-500 text-3xl'></i>
+          <h3 className='text-white font-bold text-2xl pb-2'>Mongoose</h3>
+          <p className='text-[#747474] font-semibold pb-5'>
+            The final icing on the cake, Mongoose allows to me to integrate a
+            database (MongoDB) into the equation for a full MERN stack web
+            application.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}

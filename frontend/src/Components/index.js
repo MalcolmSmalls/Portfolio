@@ -5,5 +5,6 @@ import Header from './Header'
 import Navbar from './Navbar'
 import Portfolio from './Portfolio'
 import Resume from './Resume'
+import Skillset from './Skillset'
 
-export { About, Contact, Footer, Header, Navbar, Portfolio, Resume }
+export { About, Contact, Footer, Header, Navbar, Portfolio, Resume, Skillset }

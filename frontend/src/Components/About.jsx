@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='h-screen bg-[#1e1e1e]'>
+    <div className='h-full bg-[#1e1e1e] pb-40'>
       <h2 className='text-white font-BebasNeue text-5xl text-center py-20 underline underline-offset-8 decoration-red-500 decoration-double'>
         A Little About Me
       </h2>
@@ -22,7 +22,7 @@ export default function About() {
             career didn't foster the baller lifestyle, it did ingrain a strict
             practice regime, passion, creativity and a discipline that
             translates excellent into software development (180+ Consecutive
-            Days on GitHub!).
+            Days on GitHub, Let's Goooo!).
           </p>
           <p className='text-[#747474] block font-semibold py-2'>
             While I started late, I'm devoted to making up for the time missed

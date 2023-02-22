@@ -7,6 +7,7 @@ import {
   Navbar,
   Portfolio,
   Resume,
+  Skillset,
 } from './Components'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div>
       <Header />
       <About />
+      <Skillset />
     </div>
   )
 }
