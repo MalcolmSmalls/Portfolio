@@ -5,6 +5,8 @@ module.exports = {
   theme: {
     fontFamily: {
       BebasNeue: ['Bebas Neue', 'Arial'],
+      Barlow: ['Barlow Semi Condensed', 'Arial'],
+      Raleway: ['Raleway', 'Arial'],
     },
     extend: {},
   },
