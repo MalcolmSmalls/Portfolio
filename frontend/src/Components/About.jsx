@@ -17,18 +17,21 @@ export default function About() {
             Web Developer
           </h3>
           <p className='text-[#747474] block font-semibold py-2'>
-            I'm a self-taught music producer and pianist turned software
-            developer with a deep interest in machine learning. While a music
-            career didn't foster the baller lifestyle, it did ingrain a strict
-            practice regime, passion, creativity and a discipline that
-            translates excellent into software development (180+ Consecutive
-            Days on GitHub, Let's Goooo!).
+            I'm a self-taught musician turned software developer with a deep
+            interest in machine learning. While a music career didn't foster the
+            baller lifestyle, it did ingrain a strict practice regime, an
+            intense passion, boundless creativity and an unwavering discipline
+            that translates perfectly into software development (180+
+            Consecutive Days on GitHub, Let's Goooo!).
           </p>
           <p className='text-[#747474] block font-semibold py-2'>
-            While I started late, I'm devoted to making up for the time missed
-            by learning daily, building projects and basically obsessing over
-            all things programming. It's a blessing at 33 to find a new passion,
-            that actually pays.
+            Even though I've started late, I'm devoted to making up for time
+            missed by learning daily, building projects and obsessing over all
+            things programming. It's a blessing at 33 to find a new passion to
+            succeed for.{' '}
+            <span className='text-[10px] '>
+              And one that actually pays the bills.
+            </span>
           </p>
         </div>
 

@@ -20,7 +20,7 @@ export default function Header() {
                 strings: [
                   'Full Stack Software Engineer',
                   'JavaScript Web Developer',
-                  'HTML/CSS, Node.JS, React, MongooseDB',
+                  'Computer Science Major',
                 ],
                 autoStart: true,
                 delay: 90,
