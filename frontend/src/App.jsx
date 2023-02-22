@@ -18,6 +18,10 @@ function App() {
       <Header />
       <About />
       <Skillset />
+      <Portfolio />
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   )
 }
