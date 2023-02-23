@@ -25,7 +25,7 @@ export default function Contact() {
           <div className='text-xl text-[#747474] flex gap-5'>
             <i className='fab fa-github'></i>
             <i className='fab fa-twitter'></i>
-            <i class='fab fa-linkedin'></i>
+            <i className='fab fa-linkedin'></i>
           </div>
         </div>
         <div className='container flex flex-col w-full font-Raleway text-white'>

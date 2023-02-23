@@ -32,7 +32,7 @@ export default function Header() {
             />
           </h3>
           <button className='text-red-500 text-xl font-Barlow border border-red-500 py-2 px-6 rounded-2xl hover:bg-red-500 hover:text-white tracking-wide transition-colors duration-500'>
-            Let's Work
+            <a href='#contact'>Let's Work</a>
           </button>
         </div>
       </div>

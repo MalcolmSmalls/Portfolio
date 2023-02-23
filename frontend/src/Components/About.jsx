@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className='h-full bg-[#1e1e1e] pb-40' id='about'>
       <h2 className='text-white font-BebasNeue text-5xl text-center py-20 underline underline-offset-8 decoration-red-500 decoration-double'>
-        A Little About Me
+        About Me
       </h2>
       <div className='container font-Raleway flex p-5 mx-auto w-2/3 gap-10'>
         <div className='container flex flex-col w-2/3'>
