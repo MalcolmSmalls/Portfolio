@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Skillset() {
   return (
-    <div className='h-full bg-[#292929]'>
+    <div className='h-full bg-[#292929]' id='skillset'>
       <h2 className='text-white font-BebasNeue text-5xl text-center underline underline-offset-8 decoration-red-500 decoration-double py-20'>
         Skillset
       </h2>

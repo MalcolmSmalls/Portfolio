@@ -15,6 +15,7 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       <Header />
       <About />
       <Skillset />

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Resume() {
   return (
-    <div className='h-full bg-[#292929]'>
+    <div className='h-full bg-[#292929]' id='resume'>
       <h2 className='text-white font-BebasNeue text-5xl text-center underline underline-offset-8 decoration-red-500 decoration-double py-20'>
         Resume
       </h2>
