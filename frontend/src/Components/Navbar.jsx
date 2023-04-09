@@ -16,7 +16,7 @@ export default function Navbar() {
         ' fixed w-full h-14 flex justify-end shadow-lg'
       )}
     >
-      <ul className='flex gap-6 font-Raleway font-bold text-xl  self-center tracking-tighter pr-10 uppercase '>
+      <ul className='flex lg:gap-6 gap-4 font-Raleway font-bold lg:text-xl text-sm self-center tracking-tighter pr-10 uppercase '>
         <li
           className={classNames(
             scrollPosition > 0 ? 'hover:text-white' : 'hover:text-[#292929]',
