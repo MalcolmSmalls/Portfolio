@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='h-full bg-[#1e1e1e] pb-40' id='about'>
-      <h2 className='text-white font-BebasNeue text-5xl text-center lg:py-20 py-10 underline underline-offset-8 decoration-red-500 decoration-double'>
+    <div className='h-full bg-[#1e1e1e] lg:pb-20 pb-5' id='about'>
+      <h2 className='text-white font-BebasNeue text-5xl text-center lg:py-20 pt-10 underline underline-offset-8 decoration-red-500 decoration-double'>
         About Me
       </h2>
-      <div className='container font-Raleway flex p-5 mx-auto lg:w-2/3 w-full flex-col lg:flex-row-reverse gap-10'>
+      <div className='container font-Raleway flex lg:p-5 p-10 mx-auto lg:w-2/3 w-full flex-col lg:flex-row-reverse gap-10'>
         <div className='text-white font-sans self-center text-sm'>
           <ul>
             <li className='py-1 border-[#747474] border-b border-opacity-25'>

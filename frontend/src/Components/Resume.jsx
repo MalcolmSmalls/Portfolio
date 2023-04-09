@@ -3,12 +3,12 @@ import React from 'react'
 export default function Resume() {
   return (
     <div className='h-full bg-[#292929]' id='resume'>
-      <h2 className='text-white font-BebasNeue text-5xl text-center underline underline-offset-8 decoration-red-500 decoration-double py-20'>
+      <h2 className='text-white font-BebasNeue text-5xl text-center underline underline-offset-8 decoration-red-500 decoration-double pb-2 pt-10 lg:py-20'>
         Resume
       </h2>
       <div className='container flex lg:flex-row flex-col p-8 mx-auto lg:w-3/4 w-full gap-10'>
         <div className='container flex flex-col flex-none lg:w-1/2 w-full'>
-          <h3 className='text-white font-BebasNeue lg:text-3xl text-5xl pb-5 w-fit self-center'>
+          <h3 className='text-white font-BebasNeue lg:text-3xl text-7xl pb-5 w-fit self-center'>
             Education
           </h3>
 
@@ -63,7 +63,7 @@ export default function Resume() {
         </div>
 
         <div className='container flex flex-col flex-none lg:w-1/2 w-full'>
-          <h3 className='text-white font-BebasNeue lg:text-3xl text-5xl pb-5 self-center'>
+          <h3 className='text-white font-BebasNeue lg:text-3xl text-7xl pb-5 self-center'>
             Work Experience
           </h3>
 
