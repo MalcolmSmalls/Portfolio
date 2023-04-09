@@ -11,11 +11,11 @@ export default function Header() {
         style={{ backgroundImage: `url(${bg1})` }}
         id='home'
       >
-        <div className='flex bg-[#1e1e1e] h-screen w-full bg-opacity-80 justify-center items-center flex-col gap-10'>
-          <h1 className='text-white lg:text-9xl text-7xl sm:text-7xl font-BebasNeue'>
+        <div className='flex bg-[#1e1e1e] h-screen w-full bg-opacity-80 justify-center items-center flex-col lg:gap-10 gap-6'>
+          <h1 className='text-white lg:text-9xl text-7xl font-BebasNeue'>
             Malcolm Smalls
           </h1>
-          <h3 className='text-white font-BebasNeue text-5xl'>
+          <h3 className='text-white font-BebasNeue lg:text-5xl text-3xl'>
             <Typewriter
               options={{
                 strings: [
