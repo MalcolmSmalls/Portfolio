@@ -3,12 +3,30 @@ import React from 'react'
 export default function About() {
   return (
     <div className='h-full bg-[#1e1e1e] pb-40' id='about'>
-      <h2 className='text-white font-BebasNeue text-5xl text-center py-20 underline underline-offset-8 decoration-red-500 decoration-double'>
+      <h2 className='text-white font-BebasNeue text-5xl text-center lg:py-20 py-10 underline underline-offset-8 decoration-red-500 decoration-double'>
         About Me
       </h2>
-      <div className='container font-Raleway flex p-5 mx-auto w-2/3 gap-10'>
-        <div className='container flex flex-col w-2/3'>
-          <h3 className='text-white font-sans text-xl w-2/3'>
+      <div className='container font-Raleway flex p-5 mx-auto lg:w-2/3 w-full flex-col lg:flex-row-reverse gap-10'>
+        <div className='text-white font-sans self-center text-sm'>
+          <ul>
+            <li className='py-1 border-[#747474] border-b border-opacity-25'>
+              <span className='font-bold'>Name:</span> Malcolm Smalls
+            </li>
+            <li className='py-1 border-b border-[#747474] border-opacity-25'>
+              <span className='font-bold'>Email: </span>
+              malcolmsmalls.dev@gmail.com
+            </li>
+            <li className='py-1 border-b border-[#747474] border-opacity-25'>
+              <span className='font-bold'>Age: </span>33
+            </li>
+            <li className='py-1'>
+              {' '}
+              <span className='font-bold'>Location: </span>Los Angeles, CA
+            </li>
+          </ul>
+        </div>
+        <div className='container flex flex-col lg:w-2/3 w-full'>
+          <h3 className='text-white font-sans text-xl lg:w-full w-full'>
             Meet Your
             <span className='font-bold text-red-500 animate-pulse'>
               {' '}
@@ -33,25 +51,6 @@ export default function About() {
               And one that actually pays the bills.
             </span>
           </p>
-        </div>
-
-        <div className='text-white font-sans self-center text-sm'>
-          <ul>
-            <li className='py-1 border-[#747474] border-b border-opacity-25'>
-              <span className='font-bold'>Name:</span> Malcolm Smalls
-            </li>
-            <li className='py-1 border-b border-[#747474] border-opacity-25'>
-              <span className='font-bold'>Email: </span>
-              malcolmsmalls.dev@gmail.com
-            </li>
-            <li className='py-1 border-b border-[#747474] border-opacity-25'>
-              <span className='font-bold'>Age: </span>33
-            </li>
-            <li className='py-1'>
-              {' '}
-              <span className='font-bold'>Location: </span>Los Angeles, CA
-            </li>
-          </ul>
         </div>
       </div>
     </div>
