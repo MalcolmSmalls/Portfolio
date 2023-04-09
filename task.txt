@@ -1,0 +1,11 @@
+update portfolio
+take a new hero picture
+
+get form working to send e-mail
+
+mobile friendly! - put things in columns do away with navbar? 
+
+make tele link for telephone
+make mailto link for Email
+add links to github, linkedin and twitter
+
