@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <div
-        className='container h-screen w-full bg-cover bg-left-top'
+        className='h-screen w-full bg-cover bg-left-top'
         style={{ backgroundImage: `url(${bg1})` }}
         id='home'
       >
