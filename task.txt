@@ -9,3 +9,9 @@ make tele link for telephone
 make mailto link for Email
 add links to github, linkedin and twitter
 
+match height about me section and contact section longer than rest
+
+match title height on mobile
+
+
+match sizes of resume section ?
