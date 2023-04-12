@@ -13,7 +13,7 @@ export default function Navbar() {
         scrollPosition > 0
           ? 'bg-red-500/0 text-red-500'
           : 'bg-red-500 text-white',
-        ' fixed w-full h-14 flex lg:justify-end shadow-lg '
+        ' fixed w-full h-14 flex lg:justify-end shadow-lg z-10'
       )}
     >
       <div className='flex justify-center lg:justify-end w-full'>

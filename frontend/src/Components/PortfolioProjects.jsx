@@ -3,10 +3,10 @@ import React from 'react'
 export default function PortfolioProjects({ link, image, title, subtitle }) {
   return (
     <>
-      <div className='group rounded lg:w-1/2 w-[90%] relative overflow-hidden bg-black '>
+      <div className='group rounded lg:w-1/2 w-[90%] relative overflow-hidden bg-black z-0'>
         <a href={link} target='_blank'>
           <img
-            className='object-cover w-full h-80 rounded-lg transition-all ease-in-out group-hover:scale-125 group-hover:blur-sm duration-500 group-hover:opacity-20 z-10'
+            className='object-cover w-full h-80 rounded-lg transition-all ease-in-out group-hover:scale-125 group-hover:blur-sm duration-500 group-hover:opacity-20 z-0'
             src={image}
           />
           <div
