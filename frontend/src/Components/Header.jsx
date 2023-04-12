@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <div
-        className='lg:h-screen h-[80vh] w-full lg:bg-fill bg-fill lg:bg-top bg-[14%_15%]'
+        className='lg:h-screen h-[80vh] w-full lg:bg-fill bg-fill lg:bg-top bg-[14%_10%]'
         style={{ backgroundImage: `url(${bg1})` }}
         id='home'
       >
