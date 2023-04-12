@@ -24,6 +24,15 @@ export default function Contact() {
       setMessageSent(true)
     }
   }
+
+  const handleEnter = (e) => {
+    if (e.keyCode === 13) {
+      const form = e.target.form
+      const index = Array.prototype.indexOf.call(form, e.target)
+      form.elements[index + 1].focus()
+      e.preventDefault()
+    }
+  }
   return (
     <div className='h-full bg-[#1e1e1e] pb-20' id='contact'>
       <h2 className='text-white font-BebasNeue text-5xl text-center pt-10 lg:py-20 underline underline-offset-8 decoration-red-500 decoration-double '>
@@ -82,6 +91,7 @@ export default function Contact() {
           <form className='w-full' onSubmit={submitHandler}>
             <div className='container flex font-Raleway text-white gap-5 w-full'>
               <input
+                onKeyDown={handleEnter}
                 className={`${
                   messageSent
                     ? 'bg-[#292929] placeholder-black'
@@ -93,6 +103,7 @@ export default function Contact() {
                 disabled={messageSent}
               />
               <input
+                onKeyDown={handleEnter}
                 className={`${
                   messageSent
                     ? 'bg-[#292929] placeholder-black'
@@ -107,6 +118,7 @@ export default function Contact() {
             </div>
             <div className='flex flex-col'>
               <textarea
+                onKeyDown={handleEnter}
                 className={`${
                   messageSent
                     ? 'bg-[#292929] placeholder-black'
