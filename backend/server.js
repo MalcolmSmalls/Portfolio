@@ -1,40 +1,20 @@
 const express = require('express')
+const dotenv = require('dotenv')
+const contactRoutes = require('./routes/contactRoutes')
+
+dotenv.config()
 const app = express()
 app.use(express.json())
 
-const nodemailer = require('nodemailer')
-
 app.get('/', (req, res) => {
-  res.send('hello')
+  res.send('API is running')
 })
 
-app.post('/', (req, res) => {
-  console.log(req.body)
+app.use('/api/form', contactRoutes)
 
-  const transporter = nodemailer.createTransport({
-    server: 'gmail',
-    auth: {
-      user: '',
-      pass: '',
-    },
-  })
+const PORT = process.env.PORT || 5000
 
-  const mailOptions = {
-    from: req.body.email,
-    to: '',
-    subject: '',
-    text: '',
-  }
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error)
-      res.send(error)
-    } else {
-      console.log('Email sent')
-      res.send('success')
-    }
-  })
-})
-
-app.listen(5000, console.log('Server running on port 5000'))
+app.listen(
+  PORT,
+  console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV}`)
+)

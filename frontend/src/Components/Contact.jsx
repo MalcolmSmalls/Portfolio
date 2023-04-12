@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [warning, setWarning] = useState('')
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    if (!name) {
+      setWarning('Name required')
+    } else if (!email) {
+      setWarning('Email required')
+    } else if (!message) {
+      setWarning('Message required')
+    } else {
+      axios.post('/api/form', { name, email, message }).then((response) => {
+        console.log(response)
+      })
+    }
+  }
   return (
     <div className='h-full bg-[#1e1e1e] pb-40' id='contact'>
       <h2 className='text-white font-BebasNeue text-5xl text-center pt-10 lg:py-20 underline underline-offset-8 decoration-red-500 decoration-double '>
@@ -41,23 +60,31 @@ export default function Contact() {
         </div>
         <div className='flex flex-col w-full font-Raleway text-white mt-3 items-center lg:items-start lg:mt-0'>
           <h4 className='text-white font-BebasNeue text-2xl mb-3'>
-            Send Me A Message
+            Send Me A Message{' '}
+            {warning ? <span className='text-red-500'>/ {warning}</span> : null}
           </h4>
-          <form className='w-full'>
+
+          <form className='w-full' onSubmit={submitHandler}>
             <div className='container flex font-Raleway text-white gap-5 w-full'>
               <input
                 className='bg-[#121212] rounded-lg w-1/2 h-15 p-3 placeholder-[#747474] shadow-md'
                 placeholder='Name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 className='bg-[#121212] rounded-lg w-1/2 h-15 p-3 placeholder-[#747474] shadow-md'
                 placeholder='Email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className='flex flex-col'>
-              <textArea
+              <textarea
                 className='bg-[#121212] rounded-lg w-full h-48 p-3 mt-5 placeholder-[#747474] shadow-md mb-8'
                 placeholder="What's up?"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
               <button className='self-center font-bold bg-red-500 rounded-full p-3 w-48 hover:bg-red-600 transition-colors duration-1000'>
                 Send Message
