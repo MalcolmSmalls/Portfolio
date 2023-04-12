@@ -63,7 +63,7 @@ export default function Resume() {
         </div>
 
         <div className='container flex flex-col flex-none lg:w-1/2 w-full'>
-          <h3 className='text-white font-BebasNeue lg:text-3xl text-7xl pb-5 self-center'>
+          <h3 className='text-white font-BebasNeue lg:text-3xl text-7xl pb-5 self-center text-center'>
             Work Experience
           </h3>
 

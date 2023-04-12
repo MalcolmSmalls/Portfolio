@@ -7,11 +7,11 @@ export default function Header() {
   return (
     <>
       <div
-        className='h-screen w-full bg-cover bg-left-top'
+        className='lg:h-screen h-[80vh] w-full lg:bg-fill bg-fill lg:bg-top bg-[14%_5%]'
         style={{ backgroundImage: `url(${bg1})` }}
         id='home'
       >
-        <div className='flex bg-[#1e1e1e] h-screen w-full bg-opacity-80 justify-center items-center flex-col lg:gap-10 gap-6'>
+        <div className='flex bg-[#1e1e1e] lg:h-screen h-full w-full bg-opacity-80 justify-center items-center flex-col lg:gap-10 gap-6'>
           <h1 className='text-white lg:text-9xl text-7xl font-BebasNeue'>
             Malcolm Smalls
           </h1>
