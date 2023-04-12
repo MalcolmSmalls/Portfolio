@@ -25,7 +25,7 @@ export default function Contact() {
     }
   }
   return (
-    <div className='h-full bg-[#1e1e1e] pb-40' id='contact'>
+    <div className='h-full bg-[#1e1e1e] pb-20' id='contact'>
       <h2 className='text-white font-BebasNeue text-5xl text-center pt-10 lg:py-20 underline underline-offset-8 decoration-red-500 decoration-double '>
         Contact
       </h2>
