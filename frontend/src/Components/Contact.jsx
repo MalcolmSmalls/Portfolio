@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 export default function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [warning, setWarning] = useState('')
+  const [messageStatus, setMessageStatus] = useState('')
+  const [messageSent, setMessageSent] = useState(false)
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -15,9 +18,10 @@ export default function Contact() {
     } else if (!message) {
       setWarning('Message required')
     } else {
-      axios.post('/api/form', { name, email, message }).then((response) => {
-        console.log(response)
-      })
+      axios
+        .post('/api/form', { name, email, message })
+        .then((response) => setMessageStatus(response.data))
+      setMessageSent(true)
     }
   }
   return (
@@ -62,32 +66,66 @@ export default function Contact() {
           <h4 className='text-white font-BebasNeue text-2xl mb-3'>
             Send Me A Message{' '}
             {warning ? <span className='text-red-500'>/ {warning}</span> : null}
+            {messageStatus ? (
+              <span
+                className={
+                  messageStatus === 'Message Sent Successfully'
+                    ? 'text-green-500'
+                    : 'text-red-500'
+                }
+              >
+                / {messageStatus}
+              </span>
+            ) : null}
           </h4>
 
           <form className='w-full' onSubmit={submitHandler}>
             <div className='container flex font-Raleway text-white gap-5 w-full'>
               <input
-                className='bg-[#121212] rounded-lg w-1/2 h-15 p-3 placeholder-[#747474] shadow-md'
+                className={`${
+                  messageSent
+                    ? 'bg-[#292929] placeholder-black'
+                    : 'bg-[#121212] placeholder-[#747474] '
+                } rounded-lg w-1/2 h-15 p-3 shadow-md`}
                 placeholder='Name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                disabled={messageSent}
               />
               <input
-                className='bg-[#121212] rounded-lg w-1/2 h-15 p-3 placeholder-[#747474] shadow-md'
+                className={`${
+                  messageSent
+                    ? 'bg-[#292929] placeholder-black'
+                    : 'bg-[#121212] placeholder-[#747474] '
+                } rounded-lg w-1/2 h-15 p-3 shadow-md`}
+                type='email'
                 placeholder='Email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                disabled={messageSent}
               />
             </div>
             <div className='flex flex-col'>
               <textarea
-                className='bg-[#121212] rounded-lg w-full h-48 p-3 mt-5 placeholder-[#747474] shadow-md mb-8'
+                className={`${
+                  messageSent
+                    ? 'bg-[#292929] placeholder-black'
+                    : 'bg-[#121212] placeholder-[#747474] '
+                }rounded-lg w-full h-48 p-3 mt-5  shadow-md mb-8`}
                 placeholder="What's up?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                disabled={messageSent}
               />
-              <button className='self-center font-bold bg-red-500 rounded-full p-3 w-48 hover:bg-red-600 transition-colors duration-1000'>
-                Send Message
+              <button
+                className={` self-center font-bold rounded-full p-3 w-48 ${
+                  messageSent
+                    ? 'bg-[#292929]'
+                    : 'hover:bg-red-600 bg-red-500 transition-colors duration-1000'
+                } `}
+                disabled={messageSent}
+              >
+                {messageSent ? 'Message Sent' : 'Send Message'}
               </button>
             </div>
           </form>

@@ -30,11 +30,9 @@ const sendMessage = (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(error)
       res.send(error)
     } else {
-      console.log('Email sent')
-      res.send('success')
+      res.send('Message Sent Successfully')
     }
   })
 }
