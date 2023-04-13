@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { beatStore } from '../assets/'
+import { beatStore, whoRapped } from '../assets/'
 import PortfolioProjects from './PortfolioProjects'
 
 export default function Portfolio() {
@@ -17,12 +17,12 @@ export default function Portfolio() {
             subtitle='A full stack e-commerce site for music production'
           />
 
-          <div className='rounded lg:w-1/2 w-[90%]'>
-            <img
-              className='object-cover h-80 w-full rounded-lg'
-              src={beatStore}
-            />
-          </div>
+          <PortfolioProjects
+            link='#'
+            image={whoRapped}
+            title='Who Rapped'
+            subtitle='An interactive rap lyrics trivia game'
+          />
         </div>
       </div>
     </div>
