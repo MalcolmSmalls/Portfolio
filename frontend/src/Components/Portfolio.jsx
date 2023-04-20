@@ -19,7 +19,7 @@ export default function Portfolio() {
             />
 
             <PortfolioProjects
-              link='#'
+              link='https://whorappedapp.herokuapp.com/'
               image={whoRapped}
               title='Who Rapped *UNDER CONSTRUCTION*'
               subtitle='An interactive rap lyrics trivia game'
