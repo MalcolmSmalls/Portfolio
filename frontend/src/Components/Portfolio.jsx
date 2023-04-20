@@ -21,7 +21,7 @@ export default function Portfolio() {
             <PortfolioProjects
               link='#'
               image={whoRapped}
-              title='Who Rapped'
+              title='Who Rapped *UNDER CONSTRUCTION*'
               subtitle='An interactive rap lyrics trivia game'
             />
           </div>

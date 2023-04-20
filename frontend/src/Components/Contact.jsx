@@ -63,7 +63,7 @@ export default function Contact() {
               <a href='https://github.com/MalcolmSmalls' target='_blank'>
                 <i className='fab fa-github hover:text-white'></i>
               </a>
-              <a href='https://twitter.com/bigchopdev' target='_blank'>
+              <a href='https://twitter.com/builtbymalcolm' target='_blank'>
                 <i className='fab fa-twitter hover:text-white'></i>
               </a>
               <a

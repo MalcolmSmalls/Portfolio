@@ -76,7 +76,7 @@ export default function Resume() {
                 2023 - Present
               </div>
 
-              <h4 className='text-2xl text-white font-bold'>Codetta</h4>
+              <h4 className='text-2xl text-white font-bold'>BuiltByMalcolm</h4>
               <h4 className='text-lg text-red-500 pb-5'>
                 Freelance Web Developer
               </h4>
