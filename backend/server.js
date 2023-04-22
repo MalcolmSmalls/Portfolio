@@ -2,10 +2,12 @@ const express = require('express')
 const dotenv = require('dotenv')
 const contactRoutes = require('./routes/contactRoutes')
 const path = require('node:path')
+const redirect = require('./middleware/sslMiddleware')
 
 dotenv.config()
 const app = express()
 app.use(express.json())
+app.use(redirect)
 
 app.use('/api/form', contactRoutes)
 
